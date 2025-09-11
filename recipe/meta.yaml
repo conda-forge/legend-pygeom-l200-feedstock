@@ -1,5 +1,5 @@
 {% set name = "legend-pygeom-l200" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/legend_pygeom_l200-{{ version }}.tar.gz
-  sha256: 8059fa4b1e657d8d6a81b8b7fd4901d7c241a0edff7edc7caac8d0486042d213
+  sha256: dcfe66c8f166fc011027271af6d4c9f60a86fc239d6a8dd194bb293dad0c40fc
 
 build:
   noarch: python
