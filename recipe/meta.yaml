@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   entry_points:
     - legend-pygeom-l200 = l200geom.cli:dump_gdml_cli
 
@@ -36,7 +36,6 @@ requirements:
     - pylegendmeta >=v1.3.1
     - pyyaml
     - scipy
-    - git
 
 test:
   imports:
