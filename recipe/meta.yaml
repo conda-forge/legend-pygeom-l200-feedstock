@@ -24,7 +24,6 @@ requirements:
     - setuptools-scm >=7
     - pip
   run:
-    - gitpython
     - python >={{ python_min }}
     - dbetto
     - legend-pygeom-hpges >=0.7.0
@@ -36,7 +35,6 @@ requirements:
     - pylegendmeta >=v1.3.1
     - pyyaml
     - scipy
-    - git
 
 test:
   imports:
