@@ -13,9 +13,9 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   entry_points:
-    - legend-pygeom-l200 = l200geom.cli:dump_gdml_cli
+    - legend-pygeom-l200 = pygeoml200.cli:dump_gdml_cli
 
 requirements:
   host:
@@ -39,6 +39,7 @@ requirements:
 test:
   imports:
     - l200geom
+    - pygeoml200
   commands:
     - pip check
     - legend-pygeom-l200 --public-geom test.gdml
