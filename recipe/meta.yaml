@@ -1,5 +1,5 @@
 {% set name = "legend-pygeom-l200" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/legend_pygeom_l200-{{ version }}.tar.gz
-  sha256: 92123cf14e776b765a42ad648031f27d94aaffede89607451f2dac830619e60f
+  sha256: 1f05febfd8593835cf2c2054c35859f4c4efd4ad1ebda45eaa468e0b94854bda
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
   entry_points:
     - legend-pygeom-l200 = pygeoml200.cli:dump_gdml_cli
 
