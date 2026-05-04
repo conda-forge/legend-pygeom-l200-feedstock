@@ -47,6 +47,7 @@ test:
   requires:
     - python {{ python_min }}
     - pip
+    - git
 
 about:
   summary: Geometry model of the LEGEND-200 experimental setup
