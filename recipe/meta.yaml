@@ -1,5 +1,5 @@
 {% set name = "legend-pygeom-l200" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/legend_pygeom_l200-{{ version }}.tar.gz
-  sha256: ac5cc8816b1537a7e1bf0e8c0005234f3dc24917e9c6f1044a4ae59aa7e90519
+  sha256: 943e67da0083a16300663b8ad6d8f6a54554515cf575a3b04cc6b8f21141a44f
 
 build:
   noarch: python
@@ -47,6 +47,7 @@ test:
   requires:
     - python {{ python_min }}
     - pip
+    - git
 
 about:
   summary: Geometry model of the LEGEND-200 experimental setup
