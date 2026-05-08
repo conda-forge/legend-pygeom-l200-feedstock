@@ -11,7 +11,7 @@ Summary: Geometry model of the LEGEND-200 experimental setup
 
 Development: https://github.com/legend-exp/legend-pygeom-l200
 
-Documentation: https://legend-pygeom-l200.readthedocs.io
+Documentation: https://legend-pygeom-l200.readthedocs.io/
 
 Current build status
 ====================
