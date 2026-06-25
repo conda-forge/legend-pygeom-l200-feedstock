@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: legend-pygeom-l200
-  version: 0.9.0
-  python_min: '3.10'
+  version: "0.9.0"
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
