@@ -14,7 +14,7 @@ source:
   sha256: 072b33246c1781e4e08c76e986b8c6e9bd81e052c93e97253301b18c1c284bfc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
   python:
@@ -32,7 +32,7 @@ requirements:
     - python >=${{ python_min }}
     - dbetto
     - legend-pygeom-hpges >=0.9.0
-    - legend-pygeom-optics >=0.17.1
+    - legend-pygeom-optics >=0.17.2
     - legend-pygeom-tools >=0.5.0
     - numpy
     - pint
