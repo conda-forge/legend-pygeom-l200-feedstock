@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: legend-pygeom-l200
-  version: "0.10.1"
+  version: "0.10.2"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/legend_pygeom_l200-${{ version }}.tar.gz
-  sha256: 0ae5915c6661abbb9e9acc37989179f9350d44467bdbbb85f8b65a687ced6e0c
+  sha256: f3a04900075b6c4fffe88b00ef283a28e79b6b529f2e5697855cc7647fc6be5f
 
 build:
   number: 1
@@ -46,7 +46,9 @@ tests:
         - l200geom
         - pygeoml200
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - git
